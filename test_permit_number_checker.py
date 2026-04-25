@@ -13,3 +13,5 @@ def test_permit_number_is_8_characters_unhappy():
 def test_permit_number_is_alphanumerical_format_unhappy():
     assert permit_number_format("ab12345c") == False
 
+def test_permit_number_is_accepted_happy():
+    assert permit_number_format("ab1234cd") == True
